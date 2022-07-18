@@ -11,15 +11,25 @@
 h1,
 h2,
 h3,
-p,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -144,7 +154,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
+  padding: 200px;
 }
 
 .btn-order {
@@ -265,7 +275,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .team-position {
@@ -275,7 +285,7 @@ body {
   letter-spacing: 0.03em;
   quotes: none;
   color: var(--secondary-text-color);
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 /*--------FOOTER-------*/
@@ -342,8 +352,7 @@ body {
 .filters-list {
   list-style-type: none;
   display: flex;
-  justify-content: center
-
+  justify-content: center;
 }
 
 .filters-btn {
@@ -387,7 +396,7 @@ body {
 }
 
 .body-part:nth-child(3n) {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .body-part:nth-last-child(-n + 3) {
