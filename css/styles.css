@@ -154,7 +154,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 200px;
+  padding-top: 200px;
 }
 
 .btn-order {
@@ -383,9 +383,8 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 50px;
   padding: 0;
-  /*justify-content: space-between;*/
 }
 
 .body-part {
@@ -406,7 +405,7 @@ img {
 .body-name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
@@ -416,7 +415,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-top: 4px;
+  padding-top: 4px;
 }
 
 .portfolio-desc {
