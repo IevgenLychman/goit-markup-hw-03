@@ -35,7 +35,8 @@ img {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*--------HEADER-------*/
 .header {
@@ -58,7 +59,7 @@ img {
 }
 
 .top {
-  padding: 0;
+  padding: 24px 0;
   margin-right: 90px;
 }
 
@@ -145,6 +146,8 @@ img {
 .hero {
   background: var(--hero-background);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -154,7 +157,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .btn-order {
@@ -168,14 +171,17 @@ img {
   letter-spacing: 0.06em;
   border: none;
 
-  margin-top: 30px;
-  margin-bottom: 210px;
   padding: 10px 32px;
 }
 
 .btn-order:hover,
 .btn-order:focus {
   background-color: #188ce8;
+}
+
+.description {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -193,13 +199,16 @@ img {
 
 .description-list {
   list-style-type: none;
-  margin-top: 94px;
   display: flex;
-  justify-content: space-between;
 }
 
 .description-text {
-  width: 270px;
+  flex-basis: calc((100%-30 * 3) / 4);
+  margin-right: 30px;
+}
+
+.description-text:nth-child(4n) {
+  margin-right: 0;
 }
 
 .description-desc {
@@ -216,7 +225,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-top: 10px;
+  margin-top: 10px;
+}
+.work {
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -226,12 +238,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 94px;
 }
 
 .work-img {
   list-style-type: none;
-  padding-top: 50px;
+  margin-top: 50px;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
@@ -248,8 +259,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
-  margin-top: 94px;
+}
+
+.team {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -263,9 +277,6 @@ img {
   background: var(--background-color);
   display: inline-block;
   width: 270px;
-  height: 368px;
-  margin-top: 50px;
-  margin-bottom: 94px;
 }
 
 .team-name {
