@@ -73,6 +73,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
+
   display: flex;
   padding: 0;
 }
@@ -218,6 +219,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .description-quote {
@@ -225,7 +227,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-top: 10px;
 }
 .work {
   padding-bottom: 94px;
@@ -238,14 +239,22 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .work-img {
   list-style-type: none;
-  margin-top: 50px;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+}
+
+.work-img .list {
+  flex-basis: calc((100%-30 * 2) / 3);
+  margin-right: 30px;
+}
+
+.work-img .list:nth-child(3n) {
+  margin-right: 0;
 }
 
 .team {
@@ -259,6 +268,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team {
@@ -270,13 +280,22 @@ img {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .team-description {
   background: var(--background-color);
   display: inline-block;
   width: 270px;
+  flex-basis: calc((100%-30 * 3) / 4);
+  margin-right: 30px;
+}
+
+.team-description:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-text {
+  padding: 30px 0;
 }
 
 .team-name {
@@ -286,7 +305,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-top: 30px;
 }
 
 .team-position {
@@ -296,7 +314,7 @@ img {
   letter-spacing: 0.03em;
   quotes: none;
   color: var(--secondary-text-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /*--------FOOTER-------*/
@@ -304,6 +322,10 @@ img {
 .footer {
   background: var(--footer-background);
   display: flex;
+}
+
+.container .items {
+  padding: 60px 0;
 }
 
 .down {
